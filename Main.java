@@ -18,11 +18,11 @@ public class Main {public static void main(String[] args) {
                 numbers of a given array.
                 Original Array:
                 [1, 4, 17, 7, 25, 3, 100]*/
-    int averg=0,greatO=0;
+    int greatO=0,averg=0;
     ArrayList<Integer> numGreat = new ArrayList<Integer>(); // Create an ArrayList for all number greater than average
     int[]  original=   {1, 4, 17, 7, 25, 3, 100};
     for(int org:original){averg+=org;}
-    int big=averg/original.length;//for check
+    float big=averg/original.length;//for check
     for(int great:original){if(great>big){numGreat.add(great);}}//add all greater num in list
     System.out.print("The average of the said array is "+(averg/original.length)+"\n");
     System.out.print("The numbers in the said array that are\n" + "greater than the average are:" + numGreat+ "\n");
@@ -33,7 +33,7 @@ public class Main {public static void main(String[] args) {
                 Original Array:
                 [20, 30, 40]*/
     int lar=0;
-    int []largest ={20, 30, 40,50,70,40};
+    int []largest ={20, 30, 40};
     for (int bignum:largest){if(bignum>lar){lar=bignum;}}// store big num
     System.out.println("Larger value between first and last element :"+lar);
     System.out.println("------------------Exercise 4-------------------------------");
@@ -48,7 +48,8 @@ public class Main {public static void main(String[] args) {
     swap[0]=swap[swap.length-1]; //swap first with last
     swap[swap.length-1]=soop; //put new first here in the last
     System.out.println("New array after swapping the first and last elements:");
-    for(int s:swap){System.out.println("\t"+s);}
+    for(int s:swap){System.out.print("\t"+s);}
+    System.out.println("");
     System.out.println("------------------Exercise 5-------------------------------");
     ////-----------------------------Exercise 5 ----------------------------
     /*5. Write a program that places the odd elements of an array before the even elements.Original Array: [2,3,40,1,5,9,4,10,7] */
